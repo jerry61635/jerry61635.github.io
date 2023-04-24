@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            button{
+                border: none;
+                cursor: pointer;
+                background-color: inherit;
+                transition: transform .7s ease-in-out;
+                margin-left: 10px;
+            }
+            body {
+                animation: fadeInAnimation ease 3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+        
+    </head>
+    <body style="background-color: rgba(48, 41, 49, 0.144);">
+        <button >
+            <img src="img/01/动画01-旋转跳跃.gif">
+        </button>
+    </body>
+</html>
