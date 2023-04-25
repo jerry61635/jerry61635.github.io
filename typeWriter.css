@@ -1,0 +1,17 @@
+.writer {
+	position:relative;
+	opacity:0;
+	text-align:left;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.main{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@keyframes charAnim {
+	/* ADJUST THESE VALUES FOR FADE CONTROL */
+	0% {opacity:0;}
+	35% {opacity:1;}
+	100% {opacity:0.5;}
+}

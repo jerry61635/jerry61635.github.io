@@ -2,10 +2,16 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="typeWriter.css">
+        <title>首頁</title>
         <style>
             *{
                 margin: 0;
                 padding: 0;
+            }
+            header{
+                justify-content: center;
+                text-align: center;
             }
             button{
                 border: none;
@@ -15,9 +21,14 @@
                 margin-left: 10px;
             }
             body {
-                animation: fadeInAnimation ease 3s;
+                animation: fadeInAnimation ease 2s;
                 animation-iteration-count: 1;
                 animation-fill-mode: forwards;
+            }
+            main{
+                background-color: pink;
+                margin-left: 20%;
+                margin-right: 20%;
             }
             
             @keyframes fadeInAnimation {
@@ -31,9 +42,22 @@
         </style>
         
     </head>
-    <body style="background-color: rgba(48, 41, 49, 0.144);">
-        <button >
-            <img src="img/01/动画01-旋转跳跃.gif">
-        </button>
+    <body style="background-color: rgb(49, 46, 46);">
+        <header>
+            <img src="img/aharen-header.gif" alt="">
+        </header>
+        <main id="main">
+            <button>
+                <img src="img/01/动画01-旋转跳跃.gif">
+            </button>
+            <div id="para1" class="main"> </div>
+            <div id="para2" class="main"> </div>
+            <div id="para3" class="main"> </div>
+            <div id="para4" class="main"> </div>
+        </main>
     </body>
 </html>
+
+<script src="typeWriter.js">
+
+</script>
