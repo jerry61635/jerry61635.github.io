@@ -1,6 +1,9 @@
-var messageArray = ["asr_dev=[kaldi, espnet]", "game_dev=[Unity, Unreal]", "web_dev=[node.js, html]", "lang=[cht, eng, C++, C#, python, bash]"];
+var messageArray = ["asr_dev=[kaldi, espnet]",
+                    "game_dev=[Unity, Unreal]",
+                    "web_dev=[node.js, html]",
+                    "lang=[cht, eng, C++, C#, python, bash]"];
 var textPosition = 0;
-var speed = 100;
+var speed = 30;
 var index = 0;
 
 typewriter = () => {

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    justify-content: center;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+button{
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    transition: transform .7s ease-in-out;
+    margin-left: 10px;
+}
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+main{
+    background-color: pink;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+form{
+    display: inline;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
