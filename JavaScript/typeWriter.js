@@ -1,7 +1,5 @@
-var messageArray = ["asr_dev=[kaldi, espnet]",
-                    "game_dev=[Unity, Unreal]",
-                    "web_dev=[node.js, html]",
-                    "lang=[cht, eng, C++, C#, python, bash]"];
+var messageArray = ["I'm a new grand software engineer.",
+                    "Computer Science major."];
 var textPosition = 0;
 var speed = 30;
 var index = 0;
