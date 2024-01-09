@@ -1,5 +1,5 @@
-const $body = document.getElementsByTagName("page"),
-      $section = document.getElementsByTagName("section")
+const $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'),
+      $section = $('section');
 
 var numOfPages = $section.length - 1, //取得section的數量
     curPage = 0, //初始頁
