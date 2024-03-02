@@ -1,5 +1,6 @@
-var messageArray = ["My name is hanasay. I'm a new born software engineer.",
-                    "Graduated From: National Pintung University, Computer Science Major 108/9~112/6",
+var messageArray = ["My name is Yi-Jun Zheng. I'm a new born software engineer.",
+                    "Graduated From: National Pintung University, Computer Science Major",
+                    "Now I am an AI Engineer, expert at Large Language Model and Speech Recognition",
                     "My dream is being A Game Developer!"];
 var textPosition = 0;
 var speed = 30;
