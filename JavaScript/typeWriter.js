@@ -1,7 +1,7 @@
 var messageArray = ["My name is Yi-Jun Zheng. I'm a new born software engineer.",
-                    "Graduated From: National Pintung University, Computer Science Major",
-                    "Now I am an AI Engineer. Expert at Large Language Model and Speech Recognition",
-                    "My dream is being a Game Developer!"];
+                    "Graduated From: National Pintung University, Majoring in Computer Science ",
+                    "Now I am an AI Engineer. Expert at Large Language Model & Speech AI",
+                    "Being a digital artist's mentor, guiding Generative AI to paint worlds of imagination with strokes of data."];
 var textPosition = 0;
 var speed = 30;
 var index = 0;

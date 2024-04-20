@@ -45,7 +45,6 @@ input{
 }
 
 p{
-    text-indent: 1em;
     display: block;
     margin-top: 15px;
 }
@@ -54,6 +53,9 @@ p img {
     height: auto;
     padding-left: 10px;
     vertical-align: middle;
+}
+video *{
+    text-align: center;
 }
 @keyframes fadeInAnimation {
     0% {
