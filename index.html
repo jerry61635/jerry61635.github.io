@@ -2,113 +2,210 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="6;url=main.html">
-        <title>Redirecting</title>
-        <style>
-            body{
-                animation: fadeOutAnimation ease-in 3s ;
-                animation-iteration-count: 1;
-                animation-fill-mode: forwards;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100vh;
-            }
-            
-            @keyframes fadeOutAnimation {
-                0% {
-                    opacity: 1;
-                }
-                50% {
-                    opacity: 1;
-                }
-                90% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 0;
-                }
-            }
-
-            .music{
-                width: 300px;
-                height: 200px;
-                position: relative;
-                display: inline-flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .music .bar{
-                width: 12px;
-                border-radius: 10px;
-                background: white;
-                animation: movement 1.5s ease-in-out infinite;
-            }
-
-            @keyframes movement{
-                0%, 100%{
-                    height: 2px;
-                }
-                50%{
-                    height: 80px;
-                }
-            }
-            
-            .music .bar:nth-child(1){
-                background: #b65252;
-                animation-delay: 1s;
-            }
-            .music .bar:nth-child(2){
-                background: pink;
-                animation-delay: .8s;
-            }
-            .music .bar:nth-child(3){
-                background: #b65252;
-                animation-delay: .6s;
-            }
-            .music .bar:nth-child(4){
-                background: pink;
-                animation-delay: .4s;
-            }
-            .music .bar:nth-child(5){
-                background: #b65252;
-                animation-delay: .2s;
-            }
-            .music .bar:nth-child(6){
-                background: pink;
-                animation-delay: .2s;
-            }
-            .music .bar:nth-child(7){
-                background: #b65252;
-                animation-delay: .4s;
-            }
-            .music .bar:nth-child(8){
-                background: pink;
-                animation-delay: .6s;
-            }
-            .music .bar:nth-child(9){
-                background: #b65252;
-                animation-delay: .8s;
-            }
-            .music .bar:nth-child(10){
-                background: pink;
-                animation-delay: 1s;
-            }
-        </style>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <link rel="stylesheet" href="css/typeWriter.css">
+        <link rel="stylesheet" href="css/RWD.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>首頁</title>
     </head>
-    <body style="background-color: rgb(49, 46, 46);">
+    <body>
 
-        <div class="music", id="music">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
+        <marquee scrollamount=15 style="position: fixed; margin-left: 20%; margin-right: 20%;">
+            <img src="img/klee/busy/klee_busy.gif" width="50px" height="50px" style="display: inline-block;">
+            <p style="display: inline-block; margin-top: 0; margin-block-end: 0; color: aliceblue;">Sorry... Web Still Work In Progress... Best Resolution: 1920*1080, doing RWD in future!</p>
+        </marquee>
+        <section>
+            <div> 
+                <main> 
+                    <h1 style="justify-content: center;text-align: center; font-size: x-large;">Hello there<img src="img/klee/fly/klee_fly.gif"></h1>
+                    <div id="para1" style="margin-top: 10px;"> </div>
+                    <div id="para2" style="margin-top: 10px;"> </div>
+                    <div id="para3" style="margin-top: 10px;"> </div>
+                    <div id="para4" style="margin-top: 10px;"> </div>
+                    <div id="para5" style="margin-top: 10px;"> </div>
+                </main>
+            </div>
+        </section>
+
+        <section>
+            <main id="main">
+                <div>Experience<img src="img/klee/unavaliable/klee_unavaliable.gif"></div>
+                <p style="background-color: #7A484C; color: #BA9C9F;">
+                    Graduation Project - Heart of the Saint (July 2021 - Dec 2022)
+                </p>
+                <a href="https://github.com/jerry61635/Heart-of-the-Saint" style="color: rgb(9, 194, 194);">Reference GitHub</a>
+                <p style="text-indent: 2em;">
+                    Skills:
+                    <p style="text-indent: 3em;">o Unity</p>
+                    <p style="text-indent: 3em;">o Network Protocol - RPC</p>
+                    <p style="text-indent: 3em;">o Animation State Machine</p>
+                    <p style="text-indent: 3em;">o Particle System</p>
+                    <p style="text-align: center; font-size: larger;">Demo</p>
+                    <div style="width: 100%; height: 100%; text-align: center;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ihH15KjF5r4?si=BMC6Q_LBaVNHvp_0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </p>
+            </main>
+        </section>
+
+        <section>
+            <main id="main">
+                <div>Experience<img src="img/klee/horizon/klee_horizon.gif"></div>
+                <p style="background-color: #7A484C; color: #BA9C9F;">
+                    Graduation Project - Heart of the Saint (July 2021 - Dec 2022)
+                </p>
+                <p style="text-indent: 2em;">
+                    <p>o Network Protocol - RPC</p>
+                    <p style="padding-left: 3em;">Multiplayer connections utilize RPC (Remote Procedure Call) Client-Server architecture for connection establishment.</p>
+                    <p style="padding-left: 3em;">Advantages: The server only needs to execute commands once and can send them to all clients simultaneously.</p>
+                    <p style="padding-left: 3em;">Challenges: If different clients require receiving different commands, more complex configurations are needed in packet transmission definitions.</p>
+                    <img src="img/experience/ClientRPCs.png" style="width: 60%; padding-left: 20%; padding-top: 10px;">
+                </p>
+            </main>
+        </section>
+
+        <section>
+            <main id="main">
+                <div>Experience<img src="img/klee/horizon/klee_horizon.gif"></div>
+                <p style="background-color: #7A484C; color: #BA9C9F;">
+                    Graduation Project - Heart of the Saint (July 2021 - Dec 2022)
+                </p>
+                <p style="text-indent: 2em;">
+                    <p>o Animation State Machine</p>
+                    <p style="padding-left: 3em;">Actions for both characters and enemies are achieved through animation state machines.</p>
+                    <p style="padding-left: 3em;">Predefined character actions are played under specified conditions. For example, pressing Shift triggers the running animation while moving, and pressing the left mouse button triggers the attack animation.</p>
+                    <p style="padding-left: 3em;">Challenge: Predefining character animations requires a significant amount of time to adjust them to look natural. Additionally, due to the numerous different actions characters have, debugging the state machine connections takes a considerable amount of time.</p>
+                    <img src="img/experience/unity_anim.png" style="width: 60%; padding-left: 20%; padding-top: 10px;">
+                </p>
+            </main>
+        </section>
+
+        <section>
+            <main id="main">
+                <div>Experience<img src="img/klee/horizon/klee_horizon.gif"></div>
+                <p style="background-color: #7A484C; color: #BA9C9F;">
+                    Graduation Project - Heart of the Saint (July 2021 - Dec 2022)
+                </p>
+                <p style="text-indent: 2em;">
+                    <p>o Particle System</p>
+                    <p style="padding-left: 3em;">To apply effects to specific parts of an object, you'll need to extract the parts that require the effects and then apply the effects, compiling them into Shader objects.</p>
+                    <p style="padding-left: 3em;">Challenge: It's necessary to dissect models and objects into parts, requiring proficiency in software like Photoshop and Blender.</p>
+                    <p style="padding-left: 3em;">Additionally, you'll need to utilize color matching to ensure the effects blend seamlessly without appearing too abrupt.</p>
+                    <img src="img/experience/unity_effect.png" style="width: 60%; padding-left: 20%; padding-top: 10px;">
+                </p>
+            </main>
+        </section>
+
+        <section>
+            <main id="main">
+                <div>Experience<img src="img/klee/unavaliable/klee_unavaliable.gif"></div>
+                <p style="background-color: #7A484C; color: #BA9C9F;">
+                    National Pintung University, Hakka speech recognition Project (July 2022 - July 2023)
+                </p>
+                <a href="https://github.com/kaldi-asr/kaldi" style="color: rgb(9, 194, 194);">Reference GitHub Kaldi</a> <br>
+                <a href="https://github.com/espnet/espnet" style="color: rgb(9, 194, 194);">Reference GitHub Espnet</a>
+                <p style="text-indent: 2em;">
+                    Skills:
+                    <p style="text-indent: 3em;">o Kaldi</p>
+                    <p style="text-indent: 3em;">o Espnet</p>
+                    <p style="text-indent: 3em;">o Speech Recognition</p>
+                    <img src="img/experience/Hakka_asr.png" style="width: 50%; padding-left: 25%;">
+                </p>
+            </main>
+        </section>
+
+        <section>
+            <main id="main">
+                <div>Experience<img src="img/klee/horizon/klee_horizon.gif"></div>
+                <p style="background-color: #7A484C; color: #BA9C9F;">
+                    National Pintung University, Hakka speech recognition Project (July 2022 - July 2023)
+                </p>
+                <p style="text-indent: 2em;">
+                    <p>o Kaldi, TDNN-F algorithm</p>
+                    <p style="padding-left: 3em;">At the very first time, I tried using the existing tool  ‘Kaldi’ to modeling my ASR model.</p>
+                    <p style="padding-left: 3em;">I used TDNN-F algorithm as our approach</p>
+                    <p style="padding-left: 3em;">Benefit of TDNN-F ： Model will  reference content of the input while training, then pick the most possible answer. </p>
+                    <p style="padding-left: 3em;">This approach enables the model to choose characters that better fit the speaker's current context and semantics when making selections.</p>
+                    <img src="img/experience/tdnn-f.png" style="width: 40%; padding-left: 30%; padding-top: 10px;">
+                </p>
+            </main>
+        </section>
+
+        <section>
+            <main id="main">
+                <div>Experience<img src="img/klee/horizon/klee_horizon.gif"></div>
+                <p style="background-color: #7A484C; color: #BA9C9F;">
+                    National Pintung University, Hakka speech recognition Project (July 2022 - July 2023)
+                </p>
+                <p style="text-indent: 2em;">
+                    <p>o Espnet, End-to-End & Contextual-Block-Conformer</p>
+                    <p style="padding-left: 3em;">n the later stages, the modeling was switched to another speech training tool 'Espnet'. Unlike the 'GMM & HMM' architecture of 'Kaldi', 'Espnet' employs an 'End to End' framework.</p>
+                    <p style="padding-left: 3em;">Advantages: Utilizing neural networks, the model can autonomously learn knowledge without the need for optimization at each step of the model.</p>
+                    <p style="padding-left: 3em;">Disadvantages: When the model's performance does not meet expectations, the adjustable part does not like ‘Kaldi’ have so many different state. Therefore, it's crucial to ensure that training data is abundant enough before considering the use of an End-to-End architecture.</p>
+                    <p style="text-align: center; font-size: larger;">Kaldi</p>
+                    <img src="img/experience/speech_traditional-1.png" style="width: 80%; padding-left: 10%; padding-top: 10px;">
+                    <p style="text-align: center; font-size: larger;">Espnet</p>
+                    <img src="img/experience/speech_deep-1.png" style="width: 80%; padding-left: 10%; padding-top: 10px;">
+                </p>
+            </main>
+        </section>
+
+        <section>
+            <main id="main">
+                <div>Experience<img src="img/klee/unavaliable/klee_unavaliable.gif"></div>
+                <p style="background-color: #7A484C; color: #BA9C9F;">
+                    National Yang Ming Chiao Tung University, Speech AI Research Center(SARC) (July 2023 - March 2024)
+                </p>
+                <p style="text-indent: 2em;">
+                    Skills:
+                    <p style="text-indent: 3em;">o Large Language Model</p>
+                    <p style="text-indent: 3em;">o Data Preprocessing</p>
+                    <p style="text-indent: 3em;">o Ubuntu Server Maintain</p>
+                    <p style="text-indent: 3em;">o GitLab Maintain</p>
+                </p>
+                <p style="background-color: #7A484C; color: #BA9C9F;">Future...</p>
+            </main>
+        </section>
+
+        <section>
+            <body>
+                <main id="main">
+                    <div class="col-6 col-s-12">
+                        <div>Skills<img src="img/klee/search/klee_search.gif"></div>
+                        <p>Code: <img src="img/tools_logo/ISO_C++.png"> <img src="img/tools_logo/c-sharp.png"> <img src="img/tools_logo/Python-logo.png"> <img src="img/tools_logo/bash-shell.png"> </p>
+                        <p>Game Dev: <img src="img/tools_logo/Unity.png"> <img src="img/tools_logo/unreal4.png"></p>
+                        <p>Web: <img src="img/tools_logo/node_js.png"> <img src="img/tools_logo/html.png"></p>
+                        <p>Maintenance: Linux Servers, GitLab</p>
+                        <p>Auto Speech Recognition: <a href="https://github.com/kaldi-asr/kaldi">Kaldi</a> <a href="https://github.com/espnet/espnet">Espnet</a></p>
+                        <p>Large Language Model: <a href="https://ai.meta.com/llama/">Llama-2</a> <a href="https://taide.tw/index">TAIDE</a> Phison</p>
+                        <p>Language: 中文, English</p>
+                    </div>
+                </main>
+            </body>
+        </section>
+
+        <section>
+            <body>
+                <main>
+                    <div style="text-align: center;">
+                        <p style="text-align: center;">Contact me: hanasay16@gmail.com</p>
+                        <p style="text-align: center;"> Others Information </p>
+                        <form action="https://discord.com/users/559256218841907250">
+                            <input type="image" src="img/Discord.png" style="border-radius: 50%;">
+                        </form>
+                        <form action="https://leetcode.com/jerry61635/">
+                            <input type="image" src="img/LeetCode.png" style="border-radius: 50%;">
+                        </form>
+                        <form action="https://github.com/jerry61635">
+                            <input type="image" src="img/GitHub.png" style="border-radius: 50%;">
+                            &nbsp;
+                        </form>
+                    </div>
+                </main>
+            </body>
+        </section>
     </body>
 </html>
+
+<script language="JavaScript" type="text/javascript" src="./JavaScript/typeWriter.js"></script>
+<script language="JavaScript" type="text/javascript" src="./JavaScript/page.js"></script>
